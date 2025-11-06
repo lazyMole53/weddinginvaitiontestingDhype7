@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة عقد قران</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شاشة الترحيب -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-content">
+            <div class="welcome-ornament">
+                <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,30 Q25,15 50,30 T100,30 T150,30 T200,30" stroke="currentColor" fill="none" stroke-width="2"/>
+                    <circle cx="100" cy="30" r="4" fill="currentColor"/>
+                    <circle cx="50" cy="30" r="2.5" fill="currentColor"/>
+                    <circle cx="150" cy="30" r="2.5" fill="currentColor"/>
+                </svg>
+            </div>
+            
+            <h1 class="welcome-title">دعوة عقد قران</h1>
+            <p class="welcome-subtitle"></p>
+            
+            <button class="open-invitation-btn" id="openInvitationBtn">
+                <span class="btn-text">اضغط لفتح الدعوة</span>
+                <!-- <span class="btn-icon">💬</span> -->
+            </button>
+            
+            <div class="welcome-ornament welcome-ornament-bottom">
+                <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,30 Q25,45 50,30 T100,30 T150,30 T200,30" stroke="currentColor" fill="none" stroke-width="2"/>
+                    <circle cx="100" cy="30" r="4" fill="currentColor"/>
+                    <circle cx="50" cy="30" r="2.5" fill="currentColor"/>
+                    <circle cx="150" cy="30" r="2.5" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    
+    <!-- زخارف جانبية ثابتة -->
+    <div class="corner-decoration corner-top-left">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="2" fill="currentColor" opacity="0.3"/>
+            <circle cx="30" cy="30" r="1.5" fill="currentColor" opacity="0.2"/>
+            <circle cx="70" cy="30" r="1.5" fill="currentColor" opacity="0.2"/>
+            <circle cx="30" cy="70" r="1.5" fill="currentColor" opacity="0.2"/>
+            <circle cx="70" cy="70" r="1.5" fill="currentColor" opacity="0.2"/>
+            <path d="M 50 20 Q 60 30 50 40 Q 40 30 50 20" fill="currentColor" opacity="0.15"/>
+            <path d="M 20 50 Q 30 60 40 50 Q 30 40 20 50" fill="currentColor" opacity="0.15"/>
+        </svg>
+    </div>
+    
+    <div class="corner-decoration corner-top-right">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="2" fill="currentColor" opacity="0.3"/>
+            <circle cx="30" cy="30" r="1.5" fill="currentColor" opacity="0.2"/>
+            <circle cx="70" cy="30" r="1.5" fill="currentColor" opacity="0.2"/>
+            <circle cx="30" cy="70" r="1.5" fill="currentColor" opacity="0.2"/>
+            <circle cx="70" cy="70" r="1.5" fill="currentColor" opacity="0.2"/>
+            <path d="M 50 20 Q 40 30 50 40 Q 60 30 50 20" fill="currentColor" opacity="0.15"/>
+            <path d="M 80 50 Q 70 60 60 50 Q 70 40 80 50" fill="currentColor" opacity="0.15"/>
+        </svg>
+    </div>
+    
+    <div class="corner-decoration corner-bottom-left">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="2" fill="currentColor" opacity="0.3"/>
+            <path d="M 50 60 Q 60 70 50 80 Q 40 70 50 60" fill="currentColor" opacity="0.15"/>
+            <path d="M 20 50 Q 30 40 40 50 Q 30 60 20 50" fill="currentColor" opacity="0.15"/>
+            <circle cx="30" cy="30" r="1" fill="currentColor" opacity="0.2"/>
+            <circle cx="70" cy="30" r="1" fill="currentColor" opacity="0.2"/>
+        </svg>
+    </div>
+    
+    <div class="corner-decoration corner-bottom-right">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="2" fill="currentColor" opacity="0.3"/>
+            <path d="M 50 60 Q 40 70 50 80 Q 60 70 50 60" fill="currentColor" opacity="0.15"/>
+            <path d="M 80 50 Q 70 40 60 50 Q 70 60 80 50" fill="currentColor" opacity="0.15"/>
+            <circle cx="30" cy="30" r="1" fill="currentColor" opacity="0.2"/>
+            <circle cx="70" cy="30" r="1" fill="currentColor" opacity="0.2"/>
+        </svg>
+    </div>
+    
+    <!-- قلوب متطايرة في الخلفية -->
+    <div class="floating-hearts">
+        <div class="heart heart-1">💕</div>
+        <div class="heart heart-2">💝</div>
+        <div class="heart heart-3">💖</div>
+        <div class="heart heart-4">💕</div>
+        <div class="heart heart-5">💝</div>
+    </div>
+    
+    <!-- نجوم برّاقة -->
+    <div class="twinkling-stars">
+        <div class="star star-1">✨</div>
+        <div class="star star-2">⭐</div>
+        <div class="star star-3">✨</div>
+        <div class="star star-4">⭐</div>
+        <div class="star star-5">✨</div>
+        <div class="star star-6">⭐</div>
+    </div>
+    
+    <div class="container">
+        <!-- زخرفة علوية -->
+        <div class="ornament ornament-top">
+            <svg viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,20 Q25,5 50,20 T100,20 T150,20 T200,20" stroke="currentColor" fill="none" stroke-width="2"/>
+                <circle cx="100" cy="20" r="3" fill="currentColor"/>
+                <circle cx="50" cy="20" r="2" fill="currentColor"/>
+                <circle cx="150" cy="20" r="2" fill="currentColor"/>
+            </svg>
+        </div>
+
+        <!-- القسم الرئيسي -->
+        <header class="header">
+            <h1 class="page-title">دعوة</h1>
+            <h2 class="bismillah">بسم الله الرحمن الرحيم</h2>
+            <div class="quran-verse">
+                <p>"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
+            </div>
+            <div class="decorative-line"></div>
+        </header>
+
+        <!-- نص الدعوة -->
+        <section class="invitation-text">
+            <p class="main-text">
+                في يوم يكلله <span class="highlight">الفرح و السرور</span> يتشرف:
+            </p>
+        </section>
+
+        <!-- أسماء الوالدين -->
+        <section class="parents-section">
+            <div class="parents-container">
+                <div class="parent-box">
+                    <p class="parent-label">والد العريس</p>
+                    <p class="parent-name" id="brideFatherName"> إسماعيل كاظم</p>
+                </div>
+                <div class="parent-box">
+                    <p class="parent-label">والد العروس</p>
+                    <p class="parent-name" id="groomFatherName">إبراهيم منير</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- دعوة الحضور -->
+        <section class="attendance-invitation">
+            <p class="attendance-text">بدعوتكم الى حضور عقد قران</p>
+        </section>
+
+        <!-- أسماء العروسين -->
+        <section class="couple-names-section">
+            <div class="couple-names-container">
+                <div class="name-box">
+                    <p class="name-label">ابننا</p>
+                    <h2 class="bride-name" id="brideName">علي</h2>
+                </div>
+                <div class="name-box">
+                    <p class="name-label">ابنتنا</p>
+                    <h2 class="groom-name" id="groomName">اماني</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- بمشيئة الله -->
+        <section class="mashallah-section">
+            <p class="mashallah-text">وذلك بمشيئة الله تعالى</p>
+        </section>
+
+        <!-- التاريخ والوقت -->
+        <section class="date-time-section">
+            <div class="date-box">
+                <div class="icon">📅</div>
+                <div class="date-info">
+                    <h3>التاريخ</h3>
+                    <p id="eventDate">يوم السبت الموافق 22\11\2025</p>
+                </div>
+            </div>
+            <div class="time-box">
+                <div class="icon">🕐</div>
+                <div class="time-info">
+                    <h3>الوقت</h3>
+                    <p id="eventTime">الساعة 2:30 عصراً</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- العد التنازلي -->
+        <section class="countdown-section">
+            <h3 class="countdown-title">الوقت المتبقي للحفل</h3>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">يوم</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">ساعة</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">دقيقة</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">ثانية</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- موقع القاعة -->
+        <section class="venue-section">
+            <h3 class="venue-title">موقع الحفل</h3>
+            <div class="venue-card">
+                <div class="venue-icon">📍</div>
+                <p class="venue-name" id="venueName">قاعة عيون السيدية - بغداد/السيدية</p>
+                <button class="map-button" id="mapButton">
+                    <span>عرض الموقع على الخريطة</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- التحكم بالموسيقى -->
+        <div class="music-control">
+            <button id="musicToggle" class="music-button" title="تشغيل/إيقاف الموسيقى">
+                <span class="play-icon">🎵</span>
+                <span class="pause-icon" style="display: none;">⏸</span>
+            </button>
+            <audio id="backgroundMusic" loop>
+                <!-- ضع ملف الموسيقى هنا -->
+                <source src="weddingtheme.mp3" type="audio/mpeg">
+                <source src="music.ogg" type="audio/ogg">
+                <!-- يمكنك أيضاً استخدام رابط مباشر لملف صوتي -->
+            </audio>
+        </div>
+
+        <!-- زخرفة سفلية -->
+        <div class="ornament ornament-bottom">
+            <svg viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,20 Q25,35 50,20 T100,20 T150,20 T200,20" stroke="currentColor" fill="none" stroke-width="2"/>
+                <circle cx="100" cy="20" r="3" fill="currentColor"/>
+                <circle cx="50" cy="20" r="2" fill="currentColor"/>
+                <circle cx="150" cy="20" r="2" fill="currentColor"/>
+            </svg>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>بانتظار تشريفكم 💝</p>
+            <div class="creator-credit">
+                <p>This page created by: <span class="creator-name">dhype7</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
