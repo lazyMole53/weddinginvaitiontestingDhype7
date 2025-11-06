@@ -237,11 +237,14 @@
                 <span class="play-icon">🎵</span>
                 <span class="pause-icon" style="display: none;">⏸</span>
             </button>
-            <audio id="backgroundMusic" loop>
-                <!-- ضع ملف الموسيقى هنا -->
+            <audio id="backgroundMusic" loop preload="metadata">
+                <!-- 
+                    🎵 لاستخدام رابط خارجي (موصى به لـ Vercel):
+                    ارفع الملف على Google Drive أو Dropbox واستبدل الرابط أدناه
+                    مثال: src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"
+                -->
                 <source src="weddingtheme.mp3" type="audio/mpeg">
                 <source src="music.ogg" type="audio/ogg">
-                <!-- يمكنك أيضاً استخدام رابط مباشر لملف صوتي -->
             </audio>
         </div>
 
